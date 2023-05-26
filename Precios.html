@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      body {
+        background-image: url(img/fondo\ precios.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  
+      /* Resto de los estilos */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+      }
+  
+      th, td {
+        border: 1px solid rgb(172, 12, 12);
+        padding: 8px;
+      }
+  
+      th {
+        background-color: #2bb9e4;
+      }
+    </style>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width" initial-scale="1.0">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<title>Precios de la Escuela de Fútbol</title>
+<style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid rgb(172, 12, 12);
+      padding: 8px;
+    }
+
+    th {
+      background-color: #2bb9e4;
+    }
+  </style>
+
+<body>
+    
+      <table>
+        <tr>
+            <th>Categoría</th>
+            <th>Edades</th>
+            <th>Precio Mensual</th>
+        </tr>
+        <tr>
+            <td>Sub-10</td>
+            <td>Menores de 10 años</td>
+            <td>Lps. 2500</td>
+        </tr>
+        <tr>
+            <td>Sub-12</td>
+            <td>10 a 12 años</td>
+            <td>Lps. 3600</td>
+        </tr>
+        <tr>
+            <td>Sub-14</td>
+            <td>13 a 14 años</td>
+            <td>Lps. 3700</td>
+        </tr>
+        <tr>
+            <td>Sub-16</td>
+            <td>15 a 16 años</td>
+            <td>Lps. 4800</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+    <button  >
+        <li class="nav-item">
+            <a href="index.html"  class="btn-regresar"  onclick="window.scrollTo(0, 0)" class="nav-link">Regresar al Inicio</a>
+        </li>
+
+
+        
+    </button>
+      <script>
+        var carouselItems = document.querySelectorAll('.carousel-inner .item');
+        var currentIndex = 0;
+        var totalItems = carouselItems.length;
+    
+        function showNextImage() {
+          carouselItems[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % totalItems;
+          carouselItems[currentIndex].classList.add('active');
+          setTimeout(showNextImage, 2000); // Cambiar imagen cada 2 segundos
+        }
+    
+        showNextImage();
+        
+      </script>
+       
+
+
+
+</body>
+
+</html>

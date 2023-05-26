@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #cadbdd;
+    }
+    
+    .calendar {
+      font-family: Arial, sans-serif;
+      width: 100%;
+    }
+    
+    .calendar table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .calendar th,
+    .calendar td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    
+    .calendar th {
+      background-color: #e0caca;
+    }
+    
+    .event {
+      font-weight: bold;
+      color: blue;
+    }
+    
+    .match {
+      font-weight: bold;
+      color: green;
+    }
+    
+    .btn-regresar {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0d9ed8;
+      color: rgb(83, 207, 238);
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="calendar">
+    <link rel="stylesheet" href="css/style.css">
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Evento</th>
+          <th>Lugar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mayo 15</td>
+          <td class="event">Torneo de habilidades</td>
+          <td> Danli</td>
+        </tr>
+        <tr>
+          <td>Mayo 22</td>
+          <td class="match">Partido contra equipo A</td>
+          <td> Tegucigalpa</td>
+        </tr>
+        <tr>
+          <td>Mayo 29</td>
+          <td class="match">Partido contra equipo B</td>
+          <td> Tegucigalpa</td>
+        </tr>
+        <tr>
+          <td>Junio 5</td>
+          <td class="event">Clínica de entrenamiento</td>
+          <td> Tegucigalpa</td>
+        </tr>
+        <!-- Agrega más filas para otros eventos y partidos -->
+      </tbody>
+    </table>
+  </div>
+  
+  <button class="btn-regresar">
+    <a href="index.html" class="nav-link">Regresar al Inicio</a>
+  </button>
+</body>
+</html>

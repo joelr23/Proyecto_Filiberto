@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galería de Fotos y Videos - Escuela Rivas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url(img/fondo\ precios.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-content {
+      display: block;
+      margin: 20px auto;
+      max-width: 90%;
+      max-height: 90%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Galería de Fotos y Videos - Escuela Rivas</h1>
+
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="img/11.webp" alt="Imagen 1" onclick="showImageModal('img/11.webp')">
+    </div>
+    <div class="gallery-item">
+      <img src="img/22.webp" alt="Imagen 2" onclick="showImageModal('img/22.webp')">
+    </div>
+    <div class="gallery-item">
+      <img src="img/33.webp" alt="Imagen 3" onclick="showImageModal('img/33.webp')">
+    </div>
+    <div class="gallery-item">
+      <img src="img/44.webp" alt="Imagen 4" onclick="showImageModal('img/44.webp')">
+    </div>
+    <div class="gallery-item">
+      <img src="img/55.webp" alt="Imagen 5" onclick="showImageModal('img/55.webp')">
+    </div>
+    <!-- Agrega más elementos de la galería aquí -->
+  </div>
+
+  <div id="modal" class="modal">
+    <span class="modal-content">
+      <img id="modal-image" src="" alt="Imagen en tamaño real">
+    </span>
+  </div>
+  <button >
+    <li class="nav-item">
+      <a href="index.html"  class="btn-regresar"  onclick="window.scrollTo(0, 0)" class="nav-link">Regresar al Inicio</a>
+  </li>
+
+  </button>
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script>
+    function showImageModal(imageUrl) {
+      var modal = document.getElementById('modal');
+      var modalImage = document.getElementById('modal-image');
+      modalImage.src = imageUrl;
+      modal.style.display = 'block';
+    }
+
+    window.onclick = function(event) {
+      var modal = document.getElementById('modal');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    };
+
+    
+  </script>
+</body>
+</html>
